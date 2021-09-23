@@ -20,6 +20,9 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
@@ -95,6 +98,10 @@ nav { display: none; }
     position: relative;
 }
 
+.intro__img {
+   box-shadow: var(--bs); 
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -110,6 +117,8 @@ nav { display: none; }
     .intro__img {
         grid-area: img;
         min-width: 250px;
+        position: relative; 
+        z-index: 2;
     }
 
     .section__subtitle--intro {

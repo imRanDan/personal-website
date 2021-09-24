@@ -102,6 +102,7 @@ nav { display: none; }
    box-shadow: var(--bs); 
 }
 
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
@@ -132,3 +133,11 @@ nav { display: none; }
     }
 }
 
+
+/* Services Section */
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(../img/);
+    color: var(--clr-light);
+}

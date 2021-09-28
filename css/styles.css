@@ -185,7 +185,9 @@ nav { display: none; }
     opacity: 0.25;
 }
 
-
+.services {
+    margin-bottom: 4em;
+}
 
 .service {
     max-width: 500px;
@@ -196,7 +198,8 @@ nav { display: none; }
     .services {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .service + .service {

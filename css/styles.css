@@ -51,6 +51,26 @@ section {
 
 strong { font-weight: var(--fw-bold) }
 
+/* Buttons! */
+
+.btn {
+    display:inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 /* Typography */
 h1,
 h2,
@@ -157,4 +177,22 @@ nav { display: none; }
     height: 1px;
     margin: 0.5em auto 1em;
     background: currentColor;
+    opacity: 0.25;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .service + .service {
+        margin-left: 2em;
+    }
 }

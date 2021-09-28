@@ -51,11 +51,16 @@ section {
 
 strong { font-weight: var(--fw-bold) }
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 /* Buttons! */
 
 .btn {
     display:inline-block;
-    padding: .5em 1.5em;
+    padding: .5em 2.5em;
     background: var(--clr-accent);
     color: var(--clr-dark);
     text-decoration: none;
@@ -179,6 +184,8 @@ nav { display: none; }
     background: currentColor;
     opacity: 0.25;
 }
+
+
 
 .service {
     max-width: 500px;

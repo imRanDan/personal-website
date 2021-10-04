@@ -291,3 +291,14 @@ nav { display: none; }
     transform: scale(1.2);
     opacity: .75;
 }
+
+/* footer */
+
+.footer {
+    background: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+}
+
+.footer a { color: inherit }

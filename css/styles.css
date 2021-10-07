@@ -36,6 +36,11 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -141,7 +146,7 @@ max-width: 100px;
     right: 0;
     z-index: 100;
 
-    transform: translateX(0%);
+    transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -177,6 +182,27 @@ max-width: 100px;
     top: 1em;
     z-index: 1000;
 }
+
+.nav-open .nav {
+    transform: translatex(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
 
 .hamburger {
     display: block;

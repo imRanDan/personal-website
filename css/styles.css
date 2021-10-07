@@ -141,7 +141,7 @@ max-width: 100px;
     right: 0;
     z-index: 100;
 
-    transform: translateX(100%);
+    transform: translateX(0%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -167,6 +167,17 @@ max-width: 100px;
     color: var(--clr-accent);
 }
 
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
 .hamburger {
     display: block;
     position: relative;
@@ -175,7 +186,7 @@ max-width: 100px;
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;

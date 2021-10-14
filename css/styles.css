@@ -443,3 +443,11 @@ max-width: 100px;
 .social-list__link {
     padding: .5em;
 }
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em 2em;
+    max-width: 1000xp;
+    margin: 0 auto;
+}

@@ -1,2 +1,2 @@
 # Personal-Website
- <a href=danyalimran.com target="_blank">my website!</a>
+ <a href=danyalimran.com>my website!</a>

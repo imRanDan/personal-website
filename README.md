@@ -1,2 +1,2 @@
 # Personal-Website
- [my website!](https://www.youtube.com/)
+ [my website!](https://danyalimran.com/)

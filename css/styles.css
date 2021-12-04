@@ -16,13 +16,15 @@
     --clr-dark: #0e0d0d;
     --clr-accent: #a80041;
 
-    --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 16;
 }
 
 @media (min-width: 800px) {
@@ -51,7 +53,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 3em 2em;
 }
 
 strong { font-weight: var(--fw-bold) }
@@ -82,35 +84,90 @@ strong { font-weight: var(--fw-bold) }
 }
 
 /* Typography */
-h1,
+
+h1 {
+    font-family: "Source Code Pro" monospace;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+h1::before {
+    background: white;
+    animation:
+        typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+    width: .125em;
+    background: black;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(16) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+.title__subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 
+    calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 h2,
 h3 {
     line-height: 1;
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
-.section__title {
-margin-bottom: 0.1em;
-}
 
-.section__title--intro {
-    font-weight: var()
-}
-
-.section__title--intro strong {
-    display: block;
-}
-
-.section__subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro,
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
@@ -132,9 +189,7 @@ justify-content: space-between;
 padding: 1em;
 }
 
-.logo {
-max-width: 100px;
-}
+
 
 .nav {
     position: fixed;
@@ -237,38 +292,23 @@ max-width: 100px;
     position: relative;
 }
 
-.intro__img {
+/*.intro__img {
    box-shadow: var(--bs); 
-}
+} */
 
 
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
+        width: max-content;
         margin: 0 auto;
-        grid-column-gap: 1em;
-        grid-template-areas: 
-            "img title"
-            "img subtitle";
-        grid-template-columns: min-content max-content;
-    }
-
-    .intro__img {
-        grid-area: img;
-        min-width: 250px;
-        position: relative; 
-        z-index: 2;
     }
 
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
-        grid-row: 2;
-        text-align: right;
+        grid-row: 0;
         position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
     }
 }
 

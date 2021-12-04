@@ -332,7 +332,7 @@ padding: 1em;
 .section__title--services::after {
     content: '';
     display: block;
-    width: 3em;
+    width: 25%;
     height: 1px;
     margin: 0.5em auto 1em;
     background: currentColor;
@@ -340,7 +340,7 @@ padding: 1em;
 }
 
 .services {
-    margin-bottom: 4em;
+    margin-bottom: 5em;
 }
 
 .service {

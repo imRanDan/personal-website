@@ -15,6 +15,7 @@
     --clr-light: #fff;
     --clr-dark: #0e0d0d;
     --clr-accent: #a80041;
+    --clr-lightbg: #d3d3d3
 
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -167,19 +168,6 @@ h3 {
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
-
-.section__subtitle--about {
-    background: var(--clr-accent);
-    padding: .25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-}
-
-.section__subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
-}
 
 /* header */
 
@@ -367,10 +355,19 @@ padding: 1em;
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .about-me__img {
     box-shadow: var(--bs);
+}
+
+.section__subtitle--about {
+    background: var(--clr-accent);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
 }
 
 @media (min-width: 600px) {
@@ -408,11 +405,12 @@ padding: 1em;
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-lightbg);
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
     text-align: center;
+    margin-bottom: 2em;
 }
-
 
 .row {
     display: flex;
@@ -423,13 +421,28 @@ padding: 1em;
 .column {
     flex: 33.3%;
     max-width: 33.3%;
-    padding: 0 4px;
+    padding: 0px 3px;
 }
 
 .column img {
     margin-top: 15px;
     vertical-align: middle;
     width: 75%;
+}
+
+/* Responsive Layout for My Work */
+@media (max-width: 800px) {
+    .column {
+        flex: 30%;
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 /* footer */

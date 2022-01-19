@@ -304,11 +304,13 @@ padding: 1em;
 /* Services Section */
 
 .my-services {
-    background-color: var(--clr-accent);
-    background-image: url(../img/pexels-hasan-albari-1229861.jpg);
+    background-color: var(--clr-light);
+    background-image: url(/img/pexels-hasan-albari-1229861.jpg);
     background-size: cover;
+    font-size: var(--fs-h3);
    /* background-blend-mode: multiply; */
-    color: var(--clr-light);
+    color: var(--clr-accent);
+    text-shadow: -1px -1px 0 #301a35;
     text-align: center;
 }
 
@@ -323,7 +325,7 @@ padding: 1em;
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     opacity: 0.25;
 }
 
@@ -333,7 +335,8 @@ padding: 1em;
 
 .service {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 5px;
+    float: left;
 }
 
 @media (min-width: 800px) {
@@ -344,7 +347,7 @@ padding: 1em;
         margin-right: auto;
     }
 
-    .service + .service {
+    .service {
         margin-left: 2em;
     }
 }

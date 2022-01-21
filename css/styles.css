@@ -363,6 +363,7 @@ padding: 1em;
 
 .section__subtitle--about {
     background: var(--clr-accent);
+    color:var(--clr-light);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
@@ -408,7 +409,7 @@ padding: 1em;
     font-weight: var(--fw-bold);
     text-align: center;
     margin-bottom: 2em;
-    text-shadow: 0.5px 0.5px 0 #000000;
+    text-shadow: 0.5px 0.5px 0 #fff;
 }
 
 .row {

@@ -84,6 +84,29 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
+.tech_button {
+    color: white;
+    border: none;
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.html_button {
+    background-color: rgb(237, 99, 55);
+}
+
+.css_button {
+    background-color: rgb(22, 79, 219) ;
+}
+
+.js_button  {
+    background-color: rgb(224, 198, 0);
+}
+
 /* Typography */
 
 h1 {
@@ -368,6 +391,16 @@ padding: 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
+
+.my_tech_stack {
+    margin: 0 auto;
+}
+
+.tech_list {
+    list-style: none;
+}
+
+
 
 @media (min-width: 600px) {
     .about-me {

@@ -39,22 +39,24 @@
 
 /* General styles */
 
-html {
+html, body {
     scroll-behavior: smooth;
-}
-
-
-body {
     background: var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
 }
 
 section {
-    padding: 3em 2em;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 60px;
 }
 
 strong { font-weight: var(--fw-bold) }

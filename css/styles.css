@@ -167,6 +167,19 @@ h1::after {
     }
 }
 
+@media (min-width: 300px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .title__subtitle {
+        text-align: center;
+    }
+
+
+
+}
+
 h2,
 h3 {
     line-height: 1;

@@ -371,6 +371,7 @@ padding: 1em;
 
 .about-me__img {
     box-shadow: var(--bs);
+    margin-top: 25px;
 }
 
 .section__subtitle--about {
@@ -465,6 +466,11 @@ padding: 1em;
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
+}
+
+.footer h2 {
+    padding-bottom: 20px;
+    font-size: 50px;
 }
 
 .footer a { 

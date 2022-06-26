@@ -372,6 +372,7 @@ padding: 1em;
 .about-me__img {
     box-shadow: var(--bs);
     margin-top: 25px;
+    height: 45%;
 }
 
 .section__subtitle--about {

@@ -12,6 +12,12 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
+    --purple-navy: #424874ff;
+    --languid-lavender: #dcd6f7ff;
+    --maximum-blue-purple: #a6b1e1ff;
+    --light-gray: #cacfd6ff;
+    --azure-x-11-web-color: #d6e5e3ff;
+
     --clr-light: #fff;
     --clr-dark: #0e0d0d;
     --clr-accent: #a80041;
@@ -175,6 +181,10 @@ header {
 display: flex;
 justify-content: space-between;
 padding: 1em;
+}
+
+.my-logo img{
+    height: 50px;
 }
 
 

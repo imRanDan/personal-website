@@ -397,7 +397,7 @@ padding: 1em;
     margin-bottom: 1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1135px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;

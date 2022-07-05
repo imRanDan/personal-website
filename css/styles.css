@@ -113,7 +113,7 @@ h1::after {
 }
 
 h1::before {
-    background: white;
+    background: var(--clr-light);
     animation:
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
@@ -397,7 +397,7 @@ padding: 1em;
     margin-bottom: 1em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1135px) {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -442,7 +442,6 @@ padding: 1em;
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     text-align: center;
-    margin-bottom: 2em;
     text-shadow: 0.5px 0.5px 0 #fff;
 }
 
@@ -482,7 +481,7 @@ padding: 1em;
 /* footer */
 
 .footer {
-    background: #111;
+    background-color: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
@@ -491,12 +490,13 @@ padding: 1em;
 
 .footer h2 {
     padding-bottom: 20px;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .footer a { 
     color: inherit; 
     text-decoration: none;
+    font-size: 30px;
 }
 
 .footer__link {

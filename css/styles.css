@@ -492,6 +492,16 @@ padding: 1em;
     }
 }
 
+/*contact me */
+
+.contact-me {
+    text-align: center;
+}
+
+
+
+
+
 /* footer */
 
 .footer {
@@ -502,10 +512,6 @@ padding: 1em;
     font-size: var(--fs-h3);
 }
 
-.footer h2 {
-    padding-bottom: 20px;
-    font-size: 30px;
-}
 
 .footer a { 
     color: inherit; 

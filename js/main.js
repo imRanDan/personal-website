@@ -1,12 +1,7 @@
-let navToggle = document.querySelector('.nav-toggle');
-let navLinks = document.querySelector('.nav__link');
+const menu_toggle = document.querySelector('.menu-toggle');
+const sidebar = document.querySelector('.sidebar');
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
-
-navLinks.array.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open')
-    })
+menu_toggle.addEventListener('click', () => {
+    menu_toggle.classList.toggle('is-active');
+    sidebar.classList.toggle('is-active');
 })

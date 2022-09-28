@@ -96,7 +96,6 @@ strong { font-weight: var(--fw-bold) }
 
 h1 {
     font-family: "Source Code Pro" monospace;
-    position: relative;
     margin-top: 5rem;
     margin-bottom: 5rem;
     font-size: 3rem;
@@ -199,10 +198,7 @@ padding: 1em;
 height: 100px;
 }
 
-.home-app {
-    display: flex;
-    min-height: 100vh;
-}
+
 /* Nav */
 .flex {
     display: flex;
@@ -236,6 +232,11 @@ height: 100px;
 
 .prim-nav a {
     text-decoration: none;
+    color: black;
+}
+
+.prim-nav a:hover {
+    color:var(--clr-accent);
 }
 
 @media (max-width: 55em) {
@@ -326,6 +327,7 @@ height: 100px;
 
 .intro {
     position: relative;
+    z-index: -1;
 }
 
 /*.intro__img {
@@ -352,48 +354,50 @@ height: 100px;
 /* Services Section */
 
 .my-services {
-    background-color: var(--clr-dark);
-    background-image: url(/img/pexels-hasan-albari-1229861.jpg);
-    background-size: cover;
+    background-color: var(--clr-light);
     font-size: var(--fs-h3);
-    /*background-blend-mode: multiply;*/
-    color: var(--clr-light);
+    color: var(--clr-dark);
     text-shadow: 0.5px 0.5px 0 #000000;
     text-align: center;
+    max-height: 100vh;
 }
 
 .section__title--services {
     color: var(--clr-accent);
-    position: relative;
+    padding-bottom: 40px;
 }
 
-.section__title--services::after {
-    content: '';
+.services {
     display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: currentColor;
-    opacity: 0.25;
 }
 
 .service {
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 20px;
+
 }
 
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 100%;
-        margin-left: 0 auto;
-        margin-right: auto;
-    }
-
-    .service + .service {
-        margin-left: 2em;
-    }
+/* icons in services */
+.fa-brands {
+    padding: 0 5px;
 }
+
+.fa-html5 {
+    color: red;
+}
+
+.fa-css3-alt {
+    color: blue;
+}
+
+.fa-square-js {
+    color: yellow;
+}
+
+span img {
+    background-color: white;
+    width: 65px;
+}
+
 
 
 /* About Me */
@@ -405,57 +409,12 @@ height: 100px;
     color: var(--clr-dark);
 }
 
-.about-me__img {
-    box-shadow: var(--bs);
-    margin-top: 25px;
-    height: auto;
-    width: auto;
-}
-
 .section__subtitle--about {
     background: var(--clr-accent);
     color:var(--clr-light);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-}
-
-@media (min-width: 1135px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-
-    .section__title--about {
-        grid-area: title;
-    }
-
-    .section__subtitle--about {
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -2em;
-        width: calc(100% + 4em);
-        padding-left: 2em;
-        padding-right: calc(200px + 4em);
-    }
-
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-@media (min-width: 300px) {
-    .about-me__img {
-        width: 300px;
-    }
 }
 
 /* My Work */

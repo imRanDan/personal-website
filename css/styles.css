@@ -201,9 +201,10 @@ height: 100px;
 
 
 /* Nav */
+
 .flex {
     display: flex;
-    gap: var(--gap, 2rem);
+    gap: var(--gap, 3rem);
 }
 
 .my-logo img {
@@ -211,9 +212,11 @@ height: 100px;
     width: 100px;
 }
 
-.primary-header {
-    align-items: center;
+.prim-header {
+    align-items:center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 .prim-nav {
@@ -369,12 +372,18 @@ height: 100px;
 }
 
 .services {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .service {
-    padding: 20px;
+    padding: 40px;
 
+}
+
+.service h3 {
+    font-size: 2em;
+    padding-bottom: 30px;
 }
 
 /* icons in services */
@@ -399,6 +408,20 @@ span img {
     width: 65px;
 }
 
+@media (max-width: 800px) {
+    .section__title--services {
+        font-size: 35px;
+    }
+
+    .service h3 {
+        font-size: 1.2em;
+    }
+
+    .services {
+        display: block;
+    }
+}
+
 
 
 /* About Me */
@@ -418,6 +441,17 @@ span img {
     margin-bottom: 1em;
 }
 
+@media (max-width: 800px) {
+    .about-me h2 {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    
+}
+
 /* My Work */
 
 .my-work {
@@ -426,6 +460,10 @@ span img {
     font-weight: var(--fw-bold);
     text-align: center;
     text-shadow: 0.5px 0.5px 0 #fff;
+}
+
+.card {
+
 }
 
 .row {
@@ -452,6 +490,10 @@ span img {
         flex: 30%;
         max-width: 60%;
     }
+
+    .my-work h2 {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 600px) {
@@ -459,6 +501,7 @@ span img {
         flex: 100%;
         max-width: 100%;
     }
+
 }
 
 /*contact me */

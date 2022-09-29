@@ -123,8 +123,40 @@
             <!-- Contact Form -->
 
             <section id="contact" class="contact-me">
-                    <h2>Have an inquiry?</h2>
-                    <p>Contact me with the email below</p>
+                    <h2>Need something built?</h2>
+                    <p>Please fill out the following form and i'll get back to you within 48 hours</p>
+
+                    <div class="container">
+                        <form action="/pages/thankyou.html" method="post">
+                            <div class="form-row">
+                                <div class="col-25">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="name" name="name" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-25">
+                                    <label for="email">E-mail</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="email" name="email" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-25">
+                                    <label for="message">Message</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="message" name="subject" placeholder="Your message here"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
             </section>
 
             <!-- Footer -->

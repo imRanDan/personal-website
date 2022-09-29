@@ -53,6 +53,10 @@
         padding: 0;
         overflow-x:hidden;
     }
+
+    h2 {
+        font-size: 2em;
+    }
 }
 
 /* General styles */
@@ -456,7 +460,6 @@ span img {
 
 @media (max-width: 800px) {
     .about-me h2 {
-        font-size: 2em;
         text-align: center;
     }
 }
@@ -470,10 +473,6 @@ span img {
     font-weight: var(--fw-bold);
     text-align: center;
     text-shadow: 0.5px 0.5px 0 #fff;
-}
-
-.card {
-
 }
 
 .row {
@@ -500,10 +499,6 @@ span img {
         flex: 30%;
         max-width: 60%;
     }
-
-    .my-work h2 {
-        font-size: 2em;
-    }
 }
 
 @media (max-width: 600px) {
@@ -520,53 +515,60 @@ span img {
     text-align: center;
 }
 
-.contact-me form {
-    margin: 0 auto;
-    width: 500px;
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+.container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
 }
 
-.contact-me form ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.col-25 {
+    float: left;
+    width: 25;
+    margin-top: 6px;
 }
 
-.contact-me form li + li {
-    margin-top: 1em;
+.form-row:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
-.contact-me form label {
+.container input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.container label {
+    padding: 12px 12px 12px 0;
     display: inline-block;
-    width: 90px;
-    text-align: right;
 }
 
-.contact-me form input, 
-textarea {
-    font: 1em sans-serif;
-
-    width: 300px;
-    box-sizing: border-box;
-
-    border: 1px solid #999;
+.container input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
 }
 
-.contact-me form input:focus, 
-textarea:focus {
-    border-color:#a80041;
+.container input[type=submit]:hover {
+    background-color: #a80041;
 }
 
-.contact-me form textarea {
-    vertical-align: top;
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 
-    height: 5em;
-}
-
-.contact-me form button {
-    margin-left: .5em;
+    h2 {
+        font-size: 2em;
+    }
 }
 
 
@@ -600,22 +602,6 @@ textarea:focus {
 
 .footer__link:hover {
     text-decoration: underline;
-}
-
-.social-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 2em 0;
-    padding: 0;
-}
-
-.social-list__item {
-    margin: 0 .5em;
-}
-
-.social-list__link {
-    padding: .5em;
 }
 
 /* Individual portfolio item styles */

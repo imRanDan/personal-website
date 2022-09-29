@@ -242,6 +242,12 @@ width: 100%;
     background: rgb(0, 0, 0, 0.75);
 }
 
+.social-nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 @supports (backdrop-filter: blur(1rem)){
     .prim-nav {
         background: rgb(0, 0, 100, 0.1);
@@ -258,7 +264,7 @@ width: 100%;
     color:var(--clr-accent);
 }
 
-@media (max-width: 55em) {
+@media (max-width: 60em) {
     .prim-nav {
         --gap: 2em;
 
@@ -332,7 +338,7 @@ width: 100%;
 }
 
 
-@media (max-width: 880px) {
+@media (max-width: 960px) {
     .menu-toggle {
         display: block;
     }
@@ -405,7 +411,8 @@ width: 100%;
 
 /* icons in services */
 .fa-brands {
-    padding: 0 5px;
+    padding: 0 10px;
+
 }
 
 .fa-html5 {
@@ -444,10 +451,14 @@ span img {
 /* About Me */
 
 .about-me {
-    max-width: 1000px;
+    display:block;
     margin: 0 auto;
     background-color: var(--clr-light);
     color: var(--clr-dark);
+}
+
+.about-me h2 {
+    text-align: center;
 }
 
 .section__subtitle--about {
@@ -458,9 +469,27 @@ span img {
     margin-bottom: 1em;
 }
 
+.container-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me__body .headshot {
+    max-width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 200px;
+}
+
+
 @media (max-width: 800px) {
     .about-me h2 {
         text-align: center;
+    }
+
+    .container-about {
+        display: block;
     }
 }
 
@@ -505,6 +534,7 @@ span img {
     .column {
         flex: 100%;
         max-width: 100%;
+        padding: 20px 0;
     }
 
 }
@@ -564,6 +594,11 @@ span img {
     .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
+        padding: 5px 5px;
+    }
+
+    input[type=submit] {
+        height: 60px;
     }
 
     h2 {
@@ -591,18 +626,24 @@ span img {
     font-size: 20px;
 }
 
-.footer__link {
-    font-weight: var(--fw-bold);
+footer ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
 }
 
-.footer__link:hover,
-.social-list__link:hover {
-    opacity: .7;
+@media screen and (max-width: 600px) {
+    footer ul {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
 }
 
-.footer__link:hover {
-    text-decoration: underline;
-}
 
 /* Individual portfolio item styles */
 

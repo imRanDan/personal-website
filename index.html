@@ -31,11 +31,11 @@
                 </li>
 
                 <li>
-                    <a href="#services">What I Do</a>
+                    <a href="#about">Who I Am</a>
                 </li>
 
                 <li>
-                    <a href="#about">Who I Am</a>
+                    <a href="#services">TechStack</a>
                 </li>
                 
                 <li>
@@ -46,6 +46,10 @@
                     <a href="#contact">Contact</a>
                 </li>
 
+                <div class="social-nav">
+                    <li><a href="https://github.com/imRanDan" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/danyalimran/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                </div>
             </ul>
         </nav>
 
@@ -58,9 +62,24 @@
             </section>
 
 
+                        <!-- About me -->
+                        <section class="about-me" id="about">
+                            <h2 class="section__title section__title--about">Who I am</h2>
+                            <p class="section__subtitle section__subtitle--about">Developer based out of Hamilton.</p>
+                            <div class="about-me__body">
+                                <div class="container-about">
+                                    <img class="headshot" src="/assets/imgs/DI_headshot_nobg.png" alt="headshot image of danyal imran">
+                                    <p>I am a software developer with a background in communications and digital arts. 
+                                    My curious eye for tech and strong interest in design has helped me create responsive 
+                                    web applications and websites that look and feel good.</p>
+                                </div>
+                            </div>
+                        </section>
+
+
             <!-- My Services -->
             <section class="my-services" id="services">
-                <h2 class="section__title section__title--services">What I do</h2>
+                <h2 class="section__title section__title--services">TechStack</h2>
                 <div class="services">
                         <div class="service"> 
                             <h3>Development languages / tools</h3>
@@ -73,6 +92,8 @@
                                 <span><img src="/assets/imgs/expressjs.svg" alt=""></span>
                                 <span><img src="/assets/imgs/mongodb.svg" alt=""></span>
                         </div>
+
+                        
                     <!-- service -->
                     
                 </div> <!-- end of services -->
@@ -81,16 +102,7 @@
             </section>
 
 
-            <!-- About me -->
-            <section class="about-me" id="about">
-                <h2 class="section__title section__title--about">Who I am</h2>
-                <p class="section__subtitle section__subtitle--about">Developer based out of Hamilton.</p>
 
-                <div class="about-me__body">
-                    <p>I am a software developer with a communication and digital art background. My curious eye for tech and strong interest in design has helped me create responsive web applications and websites that look and feel good.</p>
-                    <p>My tech stack involves HTML, CSS, JavaScript, Node, React, Express, and MongoDB. I am familiar with both Windows and macOS platforms.</p>
-                </div>
-            </section>
 
             <!-- My Work-->
 
@@ -133,7 +145,7 @@
                                     <label for="name">Name</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="name" name="name" placeholder="Full Name">
+                                    <input type="text" id="name" name="name" placeholder="Full Name" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -141,7 +153,7 @@
                                     <label for="email">E-mail</label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" id="email" name="email" placeholder="E-mail">
+                                    <input type="text" id="email" name="email" placeholder="E-mail" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -149,7 +161,7 @@
                                     <label for="message">Message</label>
                                 </div>
                                 <div class="col-75">
-                                    <textarea id="message" name="subject" placeholder="Your message here"></textarea>
+                                    <textarea id="message" name="subject" placeholder="Your message here" required></textarea>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -161,7 +173,10 @@
 
             <!-- Footer -->
             <footer class="footer">
-                <a href="mailto:imtherandan@gmail.com" class="footer__link">imtherandan@gmail.com</a>
+                <ul class="social=list">
+                    <li><a href="https://github.com/imRanDan" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/danyalimran/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                </ul>
             </footer>
 
     <script src="/js/main.js"></script>

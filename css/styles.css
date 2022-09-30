@@ -212,6 +212,11 @@ justify-content: space-between;
 padding: 1em;
 }
 
+.intro {
+    height: 100vh;
+    padding: 300px 0;
+}
+
 
 /* Nav */
 

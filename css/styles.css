@@ -255,11 +255,11 @@ padding: 1em;
 
 .prim-nav a {
     text-decoration: none;
-    color: black;
+    color: #a80041;
 }
 
 .prim-nav a:hover {
-    color:var(--clr-accent);
+    color:var(--clr-light);
 }
 
 @media (max-width: 60em) {

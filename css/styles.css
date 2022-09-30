@@ -45,7 +45,7 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
     html,body {
         width: 100%;
         height: 100%;
@@ -73,7 +73,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    min-height: 100vh;
+
 }
 
 section {
@@ -210,8 +210,6 @@ header {
 display: flex;
 justify-content: space-between;
 padding: 1em;
-height: 100px;
-width: 100%;
 }
 
 
@@ -353,6 +351,7 @@ width: 100%;
 .intro {
     position: relative;
     z-index: -1;
+
 }
 
 /*.intro__img {
@@ -376,6 +375,61 @@ width: 100%;
 }
 
 
+/* About Me */
+
+.about-me {
+    display:block;
+    margin: 0 auto;
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+}
+
+.about-me h2 {
+    text-align: center;
+}
+
+.section__subtitle--about {
+    background: var(--clr-accent);
+    color:var(--clr-light);
+    padding: .25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+.container-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about img {
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 200px;
+}
+
+.container-about p{
+    padding-left: 20px;
+    width: 50%
+}
+
+@media (max-width: 800px) {
+
+    .container-about{
+        display: block;
+    }
+
+    .about-me h2 {
+        font-size: 2em;
+    }
+
+    .container-about p {
+        width: 100%;
+    }
+}
+
+
+
 /* What I do / Services Section */
 
 .my-services {
@@ -384,7 +438,6 @@ width: 100%;
     color: var(--clr-dark);
     text-shadow: 0.5px 0.5px 0 #000000;
     text-align: center;
-    max-height: 100vh;
 }
 
 .section__title--services {
@@ -433,12 +486,9 @@ span img {
 }
 
 @media (max-width: 800px) {
-    .section__title--services {
-        font-size: 35px;
-    }
 
-    .service h3 {
-        font-size: 1.2em;
+    .section__title--services {
+        font-size: 2em;
     }
 
     .services {
@@ -447,51 +497,6 @@ span img {
 }
 
 
-
-/* About Me */
-
-.about-me {
-    display:block;
-    margin: 0 auto;
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
-}
-
-.about-me h2 {
-    text-align: center;
-}
-
-.section__subtitle--about {
-    background: var(--clr-accent);
-    color:var(--clr-light);
-    padding: .25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
-}
-
-.container-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-me__body .headshot {
-    max-width: 100%;
-    height: 300px;
-    border: 1px solid black;
-    border-radius: 200px;
-}
-
-
-@media (max-width: 800px) {
-    .about-me h2 {
-        text-align: center;
-    }
-
-    .container-about {
-        display: block;
-    }
-}
 
 
 /* My Work */
@@ -524,10 +529,17 @@ span img {
 
 /* Responsive Layout for My Work */
 @media (max-width: 800px) {
+
+    .my-work h2 {
+        font-size: 2em;
+    }
+
     .column {
         flex: 30%;
         max-width: 60%;
     }
+
+    
 }
 
 @media (max-width: 600px) {
@@ -589,6 +601,14 @@ span img {
 .container input[type=submit]:hover {
     background-color: #a80041;
 }
+
+@media (max-width: 800px) {
+    .contact-me h2 {
+        font-size: 2em;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {

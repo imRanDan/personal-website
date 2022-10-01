@@ -669,6 +669,22 @@ footer ul {
     }
 }
 
+/* Thank you Page */
+
+.thankyoumsg {
+    height: 100vh;
+    position: relative;
+    border: 2px solid #a80041;
+}
+
+.thankyoumsg h2 {
+    font-family: var(--ff-primary);
+    margin: 0;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transforM: translate(-50%, -50%);
+}
 
 /* Individual portfolio item styles */
 

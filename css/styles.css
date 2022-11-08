@@ -387,6 +387,7 @@ padding: 1em;
     margin: 0 auto;
     background-color: var(--clr-light);
     color: var(--clr-dark);
+    height: 100vh;
 }
 
 .about-me h2 {
@@ -443,6 +444,7 @@ padding: 1em;
     color: var(--clr-dark);
     text-shadow: 0.5px 0.5px 0 #000000;
     text-align: center;
+    height: 100vh;
 }
 
 .section__title--services {
@@ -560,6 +562,7 @@ span img {
 
 .contact-me {
     text-align: center;
+    height: 100vh;
 }
 
 .container {

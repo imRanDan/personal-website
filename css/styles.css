@@ -497,6 +497,7 @@ span img {
 
     .section__title--services {
         font-size: 2em;
+        padding-top: 90px;
     }
 
     .services {

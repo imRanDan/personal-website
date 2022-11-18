@@ -20,8 +20,9 @@
 
     /* --test lol */
 
-    --clr-light: #fff;
+    --clr-light: lightgrey;
     --clr-dark: #0e0d0d;
+    --clr-darkpurp: #0C051A;
     --clr-accent: #a80041;
     --clr-lightbg: #d3d3d3
 
@@ -67,7 +68,7 @@ html {
 
 
 body {
-    background: var(--clr-light);
+    background: var(--clr-darkpurp);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -115,6 +116,7 @@ h1 {
     margin-bottom: 5rem;
     font-size: 3rem;
     position: relative;
+    color: var(--clr-accent);
 }
 
 h1::before,
@@ -128,14 +130,14 @@ h1::after {
 }
 
 h1::before {
-    background: var(--clr-light);
+    background: var(--clr-dark);
     animation:
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
     width: .125em;
-    background: black;
+    background: var(--clr-light);
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
         blink 750ms steps(16) infinite;
@@ -154,7 +156,7 @@ h1::after {
 }
 
 .title__subtitle {
-    color: hsl(0 0% 0% / 0.7);
+    color: var(--clr-accent);
     font-size: 2rem;
     font-weight: 400;
     opacity: 0;
@@ -227,7 +229,7 @@ padding: 1em;
 
 .my-logo img {
     margin: 1em;
-    width: 100px;
+    width: 30px;
 }
 
 .prim-header {
@@ -293,7 +295,7 @@ padding: 1em;
     width: 60px;
     height: 60px;
     border-radius: 99px;
-    background-color: #a80041;
+    background-color: var(--clr-accent);
     cursor: pointer;
     z-index: 9999;
 }
@@ -314,7 +316,7 @@ padding: 1em;
     width: 100%;
     height: 4px;
     border-radius: 99px;
-    background-color: #FFF;
+    background-color: var(--clr-dark);
     transition-duration: .25s;
 }
 
@@ -385,8 +387,8 @@ padding: 1em;
 .about-me {
     display:block;
     margin: 0 auto;
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
     height: 100vh;
 }
 
@@ -407,15 +409,17 @@ padding: 1em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .container-about img {
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid var(--clr-accent);
     border-radius: 200px;
 }
 
 .container-about p{
+    padding-top: 15px;
     padding-left: 20px;
     width: 50%
 }
@@ -440,12 +444,13 @@ padding: 1em;
 /* What I do / Services Section */
 
 .my-services {
-    background-color: var(--clr-light);
+    background-color: var(--clr-dark);
     font-size: var(--fs-h3);
-    color: var(--clr-dark);
+    color: var(--clr-accent);
     text-shadow: 0.5px 0.5px 0 #000000;
     text-align: center;
     height: 100vh;
+    padding-top: 100px;
 }
 
 .section__title--services {
@@ -489,7 +494,7 @@ padding: 1em;
 }
 
 span img {
-    background-color: white;
+    background-color: var(--clr-accent);
     width: 65px;
 }
 
@@ -511,11 +516,12 @@ span img {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-light);
+    background-color: var(--clr-darkpurp);
     color: var(--clr-accent);
     font-weight: var(--fw-bold);
     text-align: center;
-    text-shadow: 0.5px 0.5px 0 #fff;
+    text-shadow: 0.5px 0.5px 0;
+    height: 100vh;
 }
 
 .row {
@@ -565,12 +571,15 @@ span img {
 .contact-me {
     text-align: center;
     height: 100vh;
+    color: var(--clr-accent);
+    padding-top: 150px;
 }
 
 .container {
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: var(--clr-dark);
     padding: 20px;
+    width: 100%;
 }
 
 .col-25 {
@@ -588,19 +597,23 @@ span img {
 .container input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid black;
+    border: 1px solid var(--clr-accent);
     border-radius: 4px;
     resize: vertical;
+    background-color: var(--clr-dark);
+    color: var(--clr-light)
 }
 
 .container label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+    color: var(--clr-light);
 }
 
 .container input[type=submit] {
-    background-color: black;
-    color: white;
+    background-color: var(--clr-accent);
+    color: var(--clr-dark);
+    margin-top: 15px;
     padding: 12px 20px;
     border: none;
     border-radius: 6px;
@@ -609,7 +622,7 @@ span img {
 }
 
 .container input[type=submit]:hover {
-    background-color: #a80041;
+    color: var(--clr-light);
 }
 
 @media (max-width: 800px) {
@@ -693,3 +706,29 @@ footer ul {
 
 /* Individual portfolio item styles */
 
+@media (max-width: 800px) {
+
+    .intro {
+
+    }
+
+    .about-me {
+        height: 100vh;
+    }
+
+    .my-services {
+        height: 100vh;
+    }
+
+    .my-work {
+        height: 100vh;
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+
+
+
+}

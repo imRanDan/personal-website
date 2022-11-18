@@ -10,8 +10,3 @@ menu_toggle.addEventListener('click', () => {
         primnav.setAttribute('data-visible', false);
     }
 });
-
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("prefers-color-scheme");
-  }

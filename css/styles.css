@@ -9,14 +9,8 @@
     --ff-primary: 'Roboto Slab', serif;
     --ff-secondary: 'Roboto Slab', monospace;
 
-    --fw-reg: 300;
+    --fw-reg: 500;
     --fw-bold: 900;
-
-    --purple-navy: #424874ff;
-    --languid-lavender: #dcd6f7ff;
-    --maximum-blue-purple: #a6b1e1ff;
-    --light-gray: #cacfd6ff;
-    --azure-x-11-web-color: #d6e5e3ff;
 
     /* --test lol */
 
@@ -73,6 +67,7 @@ body {
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    font-weight: 800;
     line-height: 1.6;
 
 }
@@ -215,7 +210,7 @@ padding: 1em;
 }
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     padding: 300px 0;
 }
 
@@ -249,8 +244,6 @@ padding: 1em;
 
 .social-nav {
     display: flex;
-    justify-content: left;
-    align-items: center;
 }
 
 @supports (backdrop-filter: blur(1rem)){
@@ -287,66 +280,7 @@ padding: 1em;
     transform: translateX(0%);
 }
 
-.menu-toggle {
-    position: fixed;
-    display: none;
-    top: 1rem;
-    right: 2rem;
-    width: 60px;
-    height: 60px;
-    border-radius: 99px;
-    background-color: var(--clr-accent);
-    cursor: pointer;
-    z-index: 9999;
-}
-
-.hamburger {
-    position: relative;
-    top: calc(50% - 2px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 32px;
-    z-index: 1000;
-}
-
-.hamburger > span,
-.hamburger > span::before,
-.hamburger > span::after {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 99px;
-    background-color: var(--clr-dark);
-    transition-duration: .25s;
-}
-
-.hamburger > span::before {
-    content: '';
-    top: -10px;
-}
-
-.hamburger > span::after {
-    content: '';
-    top: 10px;
-}
-
-.menu-toggle.is-active .hamburger > span {
-    transform: rotate(45deg);
-}
-.menu-toggle.is-active .hamburger > span::before {
-    top: 0;
-    transform: rotate(0deg);
-}
-.menu-toggle.is-active .hamburger > span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-
 @media (max-width: 960px) {
-    .menu-toggle {
-        display: block;
-    }
     .content {
         padding-top: 8rem;
     }
@@ -389,7 +323,7 @@ padding: 1em;
     margin: 0 auto;
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .about-me h2 {
@@ -413,21 +347,21 @@ padding: 1em;
 }
 
 .container-about img {
-    height: 200px;
+    height: 14em;
     border: 2px solid var(--clr-accent);
-    border-radius: 200px;
+    border-radius: 14em;
 }
 
 .container-about p{
     padding-top: 15px;
     padding-left: 20px;
-    width: 50%
+    width: 80ch;
 }
 
 @media (max-width: 800px) {
 
     .container-about{
-        display: block;
+        display: flex;
     }
 
     .about-me h2 {
@@ -435,7 +369,7 @@ padding: 1em;
     }
 
     .container-about p {
-        width: 100%;
+        width: 40ch;
     }
 }
 
@@ -449,7 +383,7 @@ padding: 1em;
     color: var(--clr-accent);
     text-shadow: 0.5px 0.5px 0 #000000;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
 }
 
@@ -525,7 +459,7 @@ span img {
     font-weight: var(--fw-bold);
     text-align: center;
     text-shadow: 0.5px 0.5px 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .row {
@@ -574,7 +508,7 @@ span img {
 
 .contact-me {
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--clr-accent);
     padding-top: 150px;
 }
@@ -614,7 +548,7 @@ span img {
     color: var(--clr-light);
 }
 
-.container input[type=submit] {
+.container button[type=submit] {
     background-color: var(--clr-accent);
     color: var(--clr-dark);
     margin-top: 15px;
@@ -681,6 +615,10 @@ footer ul {
     list-style-type: none;
 }
 
+footer ul li:hover {
+    color: white;
+}
+
 @media screen and (max-width: 600px) {
     footer ul {
         display: flex;
@@ -694,7 +632,7 @@ footer ul {
 /* Thank you Page */
 
 .thankyoumsg {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     border: 2px solid #a80041;
 }
@@ -717,19 +655,19 @@ footer ul {
     }
 
     .about-me {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .my-services {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .my-work {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .contact {
-        height: 100vh;
+        min-height: 100vh;
     }
 
 

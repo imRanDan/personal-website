@@ -406,6 +406,17 @@ padding: 1em;
     padding-bottom: 10px;
 }
 
+.service ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service li {
+    padding: 10px 10px;
+}
+
 /* icons in services */
 .fa-brands {
     padding: 0 10px;
@@ -440,8 +451,14 @@ span img {
         padding-top: 90px;
     }
 
+    .service h3 {
+        font-size: 1.5em;
+    }
+
     .services {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 

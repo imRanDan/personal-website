@@ -344,9 +344,12 @@ padding: 1em;
 }
 
 .container-about img {
-    height: 14em;
+    height: 13em;
+    width: 13em;
+    object-fit: cover;
+    object-position: 100% 35%;
     border: 2px solid var(--clr-accent);
-    border-radius: 14em;
+    border-radius: 8em;
 }
 
 .container-about p{

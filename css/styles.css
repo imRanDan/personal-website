@@ -537,6 +537,13 @@ span img {
     .column {
         flex-direction: column;
     }
+
+    .card video {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
     
 
 }

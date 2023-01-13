@@ -486,9 +486,10 @@ span img {
 }
 
 .column {
-    flex: 33.3%;
-    max-width: 33.3%;
+    flex: 50%;
+    max-width: 50%;
     padding: 0px 3px;
+    flex-direction: column;
 }
 
 .column img {
@@ -497,16 +498,36 @@ span img {
     width: 75%;
 }
 
+.card video {
+    width: 40em;
+    height: 18.4em;
+    margin: 1em;
+    border: 1px solid #fff;
+}
+
 /* Responsive Layout for My Work */
-@media (max-width: 800px) {
+@media (max-width: 1550px) {
 
     .my-work h2 {
         font-size: 2em;
     }
 
     .column {
-        flex: 30%;
-        max-width: 60%;
+        max-width:fit-content;
+        margin: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card video {
+        position: relative;
+        width: 95%;
+        border: none;
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column;
     }
 
     
@@ -514,10 +535,9 @@ span img {
 
 @media (max-width: 600px) {
     .column {
-        flex: 100%;
-        max-width: 100%;
-        padding: 20px 0;
+        flex-direction: column;
     }
+    
 
 }
 

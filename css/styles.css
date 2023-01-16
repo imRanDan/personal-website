@@ -356,6 +356,7 @@ padding: 1em;
     padding-top: 15px;
     padding-left: 20px;
     width: 80ch;
+    font-weight: 500;
 }
 
 @media (max-width: 800px) {

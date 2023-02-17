@@ -384,7 +384,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
     font-size: var(--fs-h3);
     color: var(--clr-accent);
     text-shadow: 0.5px 0.5px 0 #000000;

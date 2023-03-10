@@ -1,4 +1,4 @@
-# Personal-Website
+# Personal-Website [the first version / Aka old]
 
 My personal website. It features who I am, what I do, and how to contact me. I also list some of the projects I've worked on there and other interests. I make small updates here and there!
 
